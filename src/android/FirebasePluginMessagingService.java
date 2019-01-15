@@ -133,7 +133,7 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
                     .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
                     .setStyle(new NotificationCompat.BigTextStyle().bigText(messageBody))
                     .setAutoCancel(true)
-                    .setSound('android.resource://dev.recdp.parceiros/R.raw.grito')
+                    .setSound(Uri.parse("android.resource://dev.recdp.parceiros/R.raw.grito"))
                     .setContentIntent(pendingIntent)
                     .setPriority(NotificationCompat.PRIORITY_MAX);
 
