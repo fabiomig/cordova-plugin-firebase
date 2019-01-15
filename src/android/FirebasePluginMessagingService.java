@@ -145,6 +145,13 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
             }
 
             if (sound != null) {
+                Log.d(TAG, " ");
+                Log.d(TAG, " ");
+                Log.d(TAG, " ");
+                Log.d(TAG, " ");
+                Log.d(TAG, " ");
+                Log.d(TAG, " ");
+                Log.d(TAG, "AQUI 1");
                 Log.d(TAG, "sound before path is: " + sound);
                 Uri soundPath = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" + getPackageName() + "/raw/" + sound);
                 Log.d(TAG, "Parsed sound is: " + soundPath.toString());
@@ -208,6 +215,13 @@ public class FirebasePluginMessagingService extends FirebaseMessagingService {
 
             notificationManager.notify(id.hashCode(), notification);
         } else {
+            Log.d(TAG, " ");
+            Log.d(TAG, " ");
+            Log.d(TAG, " ");
+            Log.d(TAG, " ");
+            Log.d(TAG, " ");
+            Log.d(TAG, " ");
+            Log.d(TAG, "AQUI 1");
             bundle.putBoolean("tap", false);
             bundle.putString("title", title);
             bundle.putString("body", messageBody);
